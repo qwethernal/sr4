@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane prefHeight="200.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.MainScreenController">
+    <children>
+        <VBox alignment="CENTER">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Добро пожаловать!" textAlignment="CENTER" wrappingWidth="189.3271484375">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Text>
+            <Label prefHeight="17.0" prefWidth="116.0" text="Введите дату скидок" />
+            <Label fx:id="example" text="пример" />
+            <HBox alignment="CENTER" prefHeight="25.0" prefWidth="366.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="27.0" text="Дата" />
+                  <TextField fx:id="fieldDate" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="25.0" prefWidth="366.0" />
+                <Button mnemonicParsing="false" onAction="#loginClicked" text="Войти">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets></Button>
+            </children>
+        </VBox>
+    </children>
+</StackPane>
